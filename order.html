@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html data-bs-theme="light" lang="ar" dir="rtl">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>AM Montre</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cairo:200,300,400,500,600,700,800,900&amp;subset=arabic,latin-ext&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;display=swap">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container">
+            <div class="col d-flex flex-row-reverse justify-content-center align-items-center" style="font-size: 36px;"><a class="navbar-brand d-flex d-lg-flex d-xl-flex align-items-center text-cairo-t" href="index.html" style="font-family: Cairo, sans-serif;font-weight: bold;font-size: 33px;">&nbsp;&nbsp;&nbsp;<span style="color: rgb(228, 230, 235); background-color: rgb(36, 37, 38);">AM Montre&nbsp;</span><img src="assets/img/logo-1.png" width="61" height="60"><span style="color: rgb(228, 230, 235); background-color: rgb(36, 37, 38);">&nbsp;</span></a></div>
+        </div>
+    </nav>
+    <section class="text-center py-5" id="phone" style="font-family: Cairo, sans-serif;margin-bottom: -48px;padding-top: 34px;">
+        <div class="container">
+            <div class="row d-flex flex-row justify-content-between align-items-center" style="padding-top: 0px;margin-top: -33px;">
+                <div class="col-md-6">
+                    <h2 class="text-center mb-3 text-cairo-t pb-1 mt-3" style="font-family: Cairo, sans-serif;font-weight: bold;">صفحة طلب المنتج</h2>
+                </div>
+                <div class="col-md-6 d-flex d-lg-flex flex-row justify-content-center"><a href="index.html" style="text-decoration:none"><span class="text-primary-emphasis" style="font-family: Cairo, sans-serif;font-size: 18px;font-weight: bold;">&nbsp;الرئيسية&nbsp;&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-box-arrow-left fs-1 text-danger">
+                                <path fill-rule="evenodd" d="M6 12.5a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5h-8a.5.5 0 0 0-.5.5v2a.5.5 0 0 1-1 0v-2A1.5 1.5 0 0 1 6.5 2h8A1.5 1.5 0 0 1 16 3.5v9a1.5 1.5 0 0 1-1.5 1.5h-8A1.5 1.5 0 0 1 5 12.5v-2a.5.5 0 0 1 1 0z"></path>
+                                <path fill-rule="evenodd" d="M.146 8.354a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L1.707 7.5H10.5a.5.5 0 0 1 0 1H1.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3z"></path>
+                            </svg></span></a></div>
+                <div class="col">
+                    <hr class="divider">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="product-details" style="text-align: center;">
+        <div class="col">
+            <h1 class="text-primary-emphasis" style="background: var(--bs-body-bg);margin-top: 21px;margin-bottom: 8px;font-family: Cairo, sans-serif;font-size: 24.4px;color: var(--bs-emphasis-color);"><strong><span style="color: var(--bs-primary-text-emphasis);">ساعة SKMEI الرقمية&nbsp;الرياضية</span></strong></h1>
+            <div class="d-flex flex-row justify-content-center align-items-baseline" id="imagePrice" style="margin-bottom: 20px;margin-top: 20px;">
+                <h2 style="font-family: Cairo, sans-serif;font-weight: bold;">السعر :&nbsp;</h2><span class="text-danger" id="product-price" style="font-size: 30px;font-weight: bold;color: rgb(3,67,130); font-family: Cairo, sans-serif;font-weight: bold;" name="price"></span>
+            </div>
+        </div>
+        <div class="container d-flex flex-row justify-content-center">
+            <div class="row g-0 d-flex flex-row justify-content-center align-items-start">
+                <div class="col-md-6 col-lg-6" style="padding-bottom: 20px;padding-top: 0px;margin-top: 0px;"><img class="rounded img-fluid shadow-sm card" id="product-image" src="1219/1219-3_1080x.jpg" width="500px">
+                    <div class="d-flex flex-row justify-content-center align-content-center" style="padding-top: 0px;margin-top: 25px;"><span style="font-weight: bold;font-family: Cairo, sans-serif;">الألوان المتوفرة /&nbsp;</span><span style="font-weight: bold;">SKU :&nbsp;</span><span class="text-success" id="product-description">&nbsp;</span></div>
+                </div>
+                <div class="col-11 col-md-7 col-lg-6">
+                    <div>
+                        <form class="d-lg-flex justify-content-lg-center" id="orderForm" name="orderForm" action="#" method="POST">
+                            <div class="row d-sm-flex d-md-flex justify-content-sm-center justify-content-md-center">
+                                <div class="col d-flex flex-column card" style="font-family: Cairo, sans-serif;background: var(--bs-light-border-subtle);">
+                                    <h5 class="text-center pt-3" style="margin-top:10px;margin-bottom:10px;font-weight:bold;">أضف معلوماتك لطلب المنتج</h5>
+                                    <hr>
+                                    <div class="row">
+                                        <div class="col" role="alert">
+                                            <div class="alert alert-success text-center d-none alert-dismissible fade show my-alert" role="alert"><button class="btn-close" type="button" aria-label="Close" data-bs-dismiss="alert"></button><span style="font-weight:bold;font-size:16px;">تم إرسال الطلب بنجاح <br>سيتم&nbsp;الاتصال بكم في اقرب وقت لتأكيد الطلبية شكرا .</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col"><input class="d-none" type="radio" id="product-name" checked="" name="product-name"></div>
+                                    </div>
+                                    <div class="row d-flex flex-column mb-4">
+                                        <div class="col" style="margin-bottom: 23px;">
+                                            <div class="list-group-item"><input class="form-control form-control form-control" type="text" id="fullname" name="fullname" placeholder="الاسم الكامل" required=""></div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="list-group-item"><input class="form-control form-control" type="text" id="yourNumber" name="yourNumber" placeholder="رقم الهاتف" required=""></div>
+                                        </div>
+                                    </div>
+                                    <div class="row d-flex flex-column mb-4">
+                                        <div class="col">
+                                            <div class="list-group-item" style="margin-bottom: 25px;"><input class="form-control form-control form-control" type="text" id="city" name="city" placeholder="البلدية" required=""></div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="list-group-item"><select class="form-select form-select form-select" id="state" min="0" name="state" required="" step="any">
+                                                    <option value="" selected="">الولاية | مكان التوصيل</option>
+                                                    <optgroup label="أدرار">
+                                                        <option value="أدرار-المكتب-1200دج">أدرار-المكتب-800دج</option>
+                                                        <option value="أدرار-المنزل-1800دج">أدرار-المنزل-1800دج</option>
+                                                    </optgroup>
+                                                    <optgroup label="شلف">
+                                                        <option value="شلف-المكتب-400دج">شلف-المكتب-400دج</option>
+                                                        <option value="شلف-المنزل-700دج">شلف-المنزل-700دج</option>
+                                                    </optgroup>
+                                                    <optgroup label="الأغواط">
+                                                        <option value="الأغواط-المكتب-500دج">الأغواط-المكتب-500دج</option>
+                                                        <option value="الأغواط-المنزل-800دج">الأغواط-المنزل-800دج</option>
+                                                    </optgroup>
+                                                    <optgroup label="أم البواقي">
+                                                        <option value="أم البواقي-المكتب-400دج">أم البواقي-المكتب-400دج</option>
+                                                        <option value="أم البواقي-المنزل-700دج">أم البواقي-المنزل-700دج</option>
+                                                    </optgroup>
+                                                    <optgroup label="باتنة">
+                                                        <option value="باتنة-المكتب-400دج">باتنة-المكتب-400دج</option>
+                                                        <option value="باتنة-المنزل-700دج">باتنة-المنزل-700دج</option>
+                                                    </optgroup>
+                                                    <optgroup label="بجاية">
+                                                        <option value="بجاية-المكتب-400دج">بجاية-المكتب-400دج</option>
+                                                        <option value="بجاية-المنزل-700دج">بجاية-المنزل-700دج</option>
+                                                    </optgroup>
+                                                    <optgroup label="بسكرة">
+                                                        <option value="بسكرة-المكتب-500دج">بسكرة-المكتب-500دج</option>
+                                                        <option value="بسكرة-المنزل-800دج">بسكرة-المنزل-800دج</option>
+                                                    </optgroup>
+                                                    <optgroup label="بشار">
+                                                        <option value="بشار-المكتب-500دج">بشار-المكتب-500دج</option>
+                                                        <option value="بشار-المنزل-900دج">بشار-المنزل-900دج</option>
+                                                    </optgroup>
+                                                    <optgroup label="البليدة">
+                                                        <option value="البليدة-المنزل-400دج">البليدة-المنزل-400دج</option>
+                                                    </optgroup>
+                                                    <optgroup label="البويرة">
+                                                        <option value="البويرة-المكتب-400دج">البويرة-المكتب-400دج</option>
+                                                        <option value="البويرة-المنزل-700دج">البويرة-المنزل-700دج</option>
+                                                    </optgroup>
+                                                    <optgroup label="تمنراست">
+                                                        <option value="تمنراست-المكتب-900دج">تمنراست-المكتب-900دج</option>
+                                                        <option value="تمنراست-المنزل-1200دج">تمنراست-المنزل-1200دج</option>
+                                                    </optgroup>
+                                                    <optgroup label="تبسة">
+                                                        <option value="تبسة-المكتب-400دج">تبسة-المكتب-400دج</option>
+                                                        <option value="تبسة-المنزل-700دج">تبسة-المنزل-700دج</option>
+                                                    </optgroup>
+                                                    <optgroup label="تلمسان">
+                                                        <option value="تلمسان-المكتب-400دج">تلمسان-المكتب-400دج</option>
+                                                        <option value="تلمسان-المنزل-700دج">تلمسان-المنزل-700دج</option>
+                                                    </optgroup>
+                                                    <optgroup label="تيارت">
+                                                        <option value="تيارت-المكتب-400دج">تيارت-المكتب-400دج</option>
+                                                        <option value="تيارت-المنزل-700دج">تيارت-المنزل-700دج</option>
+                                                    </optgroup>
+                                                    <optgroup label="تيزي وزو">
+                                                        <option value="تيزي وزو-المكتب-400دج">تيزي وزو-المكتب-400دج</option>
+                                                        <option value="تيزي وزو-المنزل-700دج">تيزي وزو-المنزل-700دج</option>
+                                                    </optgroup>
+                                                    <optgroup label="الجزائر">
+                                                        <option value="الجزائر-المكتب-300دج">الجزائر-المكتب-300دج</option>
+                                                        <option value="الجزائر-المنزل-400دج">الجزائر-المنزل-400دج</option>
+                                                    </optgroup>
+                                                    <optgroup label="الجلفة">
+                                                        <option value="500">الجلفة-المكتب-500دج</option>
+                                                        <option value="800">الجلفة-المنزل-800دج</option>
+                                                    </optgroup>
+                                                    <optgroup label="جيجل">
+                                                        <option value="جيجل-المكتب-400دج">جيجل-المكتب-400دج</option>
+                                                        <option value="جيجل-المنزل-700دج">جيجل-المنزل-700دج</option>
+                                                    </optgroup>
+                                                    <optgroup label="سطيف">
+                                                        <option value="سطيف-المكتب-400دج">سطيف-المكتب-400دج</option>
+                                                        <option value="سطيف-المنزل-700دج">سطيف-المنزل-700دج</option>
+                                                    </optgroup>
+                                                    <optgroup label="سكيكدة">
+                                                        <option value="سكيكدة-المكتب-400دج">سكيكدة-المكتب-400دج</option>
+                                                        <option value="سكيكدة-المنزل-700دج">سكيكدة-المنزل-700دج</option>
+                                                    </optgroup>
+                                                    <optgroup label="سيدي بلعباس">
+                                                        <option value="سيدي بلعباس-المكتب-400دج">سيدي بلعباس-المكتب-400دج</option>
+                                                        <option value="سيدي بلعباس-المنزل-700دج">سيدي بلعباس-المنزل-700دج</option>
+                                                    </optgroup>
+                                                    <optgroup label="عنابة">
+                                                        <option value="عنابة-المكتب-400دج">عنابة-المكتب-400دج</option>
+                                                        <option value="عنابة-المنزل-700دج">عنابة-المنزل-700دج</option>
+                                                    </optgroup>
+                                                    <optgroup label="قالمة">
+                                                        <option value="قالمة-المكتب-400دج">قالمة-المكتب-400دج</option>
+                                                        <option value="قالمة-المنزل-700دج">قالمة-المنزل-700دج</option>
+                                                    </optgroup>
+                                                    <optgroup label="قسنطينة">
+                                                        <option value="قسنطينة-المكتب-400دج">قسنطينة-المكتب-400دج</option>
+                                                        <option value="قسنطينة-المنزل-700دج">قسنطينة-المنزل-700دج</option>
+                                                    </optgroup>
+                                                    <optgroup label="المدية">
+                                                        <option value="المدية-المكتب-400دج">المدية-المكتب-400دج</option>
+                                                        <option value="المدية-المنزل-700دج">المدية-المنزل-700دج</option>
+                                                    </optgroup>
+                                                    <optgroup label="مستغانم">
+                                                        <option value="مستغانم-المكتب-400دج">مستغانم-المكتب-400دج</option>
+                                                        <option value="مستغانم-المنزل-700دج">مستغانم-المنزل-700دج</option>
+                                                    </optgroup>
+                                                    <optgroup label="المسيلة">
+                                                        <option value="المسيلة-المكتب-400دج">المسيلة-المكتب-400دج</option>
+                                                        <option value="المسيلة-المنزل-700دج">المسيلة-المنزل-700دج</option>
+                                                    </optgroup>
+                                                    <optgroup label="معسكر">
+                                                        <option value="معسكر-المكتب-400دج">معسكر-المكتب-400دج</option>
+                                                        <option value="معسكر-المنزل-700دج">معسكر-المنزل-700دج</option>
+                                                    </optgroup>
+                                                    <optgroup label="ورقلة">
+                                                        <option value="ورقلة-المكتب-500دج">ورقلة-المكتب-500دج</option>
+                                                        <option value="ورقلة-المنزل-800دج">ورقلة-المنزل-800دج</option>
+                                                    </optgroup>
+                                                    <optgroup label="وهران">
+                                                        <option value="وهران-المكتب-400دج">وهران-المكتب-400دج</option>
+                                                        <option value="وهران-المنزل-700دج">وهران-المنزل-700دج</option>
+                                                    </optgroup>
+                                                    <optgroup label="البيض">
+                                                        <option value="البيض-المكتب-500دج">البيض-المكتب-500دج</option>
+                                                        <option value="البيض-المنزل-900دج">البيض-المنزل-900دج</option>
+                                                    </optgroup>
+                                                    <optgroup label="برج بوعريريج">
+                                                        <option value="برج بوعريريج-المكتب-400دج">برج بوعريريج-المكتب-400دج</option>
+                                                        <option value="برج بوعريريج-المنزل-700دج">برج بوعريريج-المنزل-700دج</option>
+                                                    </optgroup>
+                                                    <optgroup label="بومرداس">
+                                                        <option value="بومرداس-المكتب-400دج">بومرداس-المكتب-400دج</option>
+                                                        <option value="بومرداس-المنزل-700دج">بومرداس-المنزل-700دج</option>
+                                                    </optgroup>
+                                                    <optgroup label="الطارف">
+                                                        <option value="الطارف-المكتب-400دج">الطارف-المكتب-400دج</option>
+                                                        <option value="الطارف-المنزل-700دج">الطارف-المنزل-700دج</option>
+                                                    </optgroup>
+                                                    <optgroup label="تيسمسيلت">
+                                                        <option value="تيسمسيلت-المنزل-700دج">تيسمسيلت-المنزل-700دج</option>
+                                                    </optgroup>
+                                                    <optgroup label="واد سوف">
+                                                        <option value="واد سوف-المكتب-500دج">واد سوف-المكتب-500دج</option>
+                                                        <option value="واد سوف-المنزل-800دج">واد سوف-المنزل-800دج</option>
+                                                    </optgroup>
+                                                    <optgroup label="خنشلة">
+                                                        <option value="خنشلة-المنزل-700دج">خنشلة-المنزل-700دج</option>
+                                                    </optgroup>
+                                                    <optgroup label="سوق اهراس">
+                                                        <option value="سوق اهراس-المكتب-400دج">سوق اهراس-المكتب-400دج</option>
+                                                        <option value="سوق اهراس-المنزل-700دج">سوق اهراس-المنزل-700دج</option>
+                                                    </optgroup>
+                                                    <optgroup label="تيبازة">
+                                                        <option value="تيبازة-المكتب-400دج">تيبازة-المكتب-400دج</option>
+                                                        <option value="تيبازة-المنزل-600دج">تيبازة-المنزل-600دج</option>
+                                                    </optgroup>
+                                                    <optgroup label="ميلة">
+                                                        <option value="ميلة-المكتب-400دج">ميلة-المكتب-400دج</option>
+                                                        <option value="ميلة-المنزل-700دج">ميلة-المنزل-700دج</option>
+                                                    </optgroup>
+                                                    <optgroup label="عين الدفلى">
+                                                        <option value="عين الدفلى-المكتب-400دج">عين الدفلى-المكتب-400دج</option>
+                                                        <option value="عين الدفلى-المنزل-700دج">عين الدفلى-المنزل-700دج</option>
+                                                    </optgroup>
+                                                    <optgroup label="النعامة">
+                                                        <option value="النعامة-المكتب-500دج">النعامة-المكتب-500دج</option>
+                                                        <option value="النعامة-المنزل-900دج">النعامة-المنزل-900دج</option>
+                                                    </optgroup>
+                                                    <optgroup label="عين تيمشنت">
+                                                        <option value="عين تيمشنت-المنزل-700دج">عين تيمشنت-المنزل-700دج</option>
+                                                    </optgroup>
+                                                    <optgroup label="غرداية">
+                                                        <option value="غرداية-المكتب-500دج">غرداية-المكتب-500دج</option>
+                                                        <option value="غرداية-المنزل-800دج">غرداية-المنزل-800دج</option>
+                                                    </optgroup>
+                                                    <optgroup label="غليزان">
+                                                        <option value="غيليزان-المكتب-400دج">غيليزان-المكتب-400دج</option>
+                                                        <option value="غليزان-المنزل-700دج">غليزان-المنزل-700دج</option>
+                                                    </optgroup>
+                                                    <optgroup label="المغير">
+                                                        <option value="المغير المنزل-800دج">المغير المنزل-800دج</option>
+                                                    </optgroup>
+                                                    <optgroup label="المنيعة">
+                                                        <option value="المنيعة المنزل-800دج">المنيعة المنزل-800دج</option>
+                                                    </optgroup>
+                                                    <optgroup label="أولاد جلال">
+                                                        <option value="أولاد جلال المكتب-500دج">أولاد جلال المكتب-500دج</option>
+                                                        <option value="أولاد جلال المنزل-800دج">أولاد جلال المنزل-800دج</option>
+                                                    </optgroup>
+                                                    <optgroup label="بني عباس">
+                                                        <option value="بني عباس المنزل-800دج">بني عباس المنزل-800دج</option>
+                                                    </optgroup>
+                                                    <optgroup label="تقرت">
+                                                        <option value="تقرت المكتب-500دج">تقرت المكتب-500دج</option>
+                                                        <option value="تقرت المنزل-800دج">تقرت المنزل-800دج</option>
+                                                    </optgroup>
+                                                </select></div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col"><select class="form-select" id="sku-color" name="sku-color">
+                                                <optgroup label="اللون"></optgroup>
+                                                <optgroup label="SKU:1841">
+                                                    <option value="1841-أسود">1841-أسود</option>
+                                                    <option value="1841-أبيض">1841-أبيض</option>
+                                                    <option value="1841-أزرق">1841-أزرق</option>
+                                                    <option value="1841-رمادي">1841-رمادي</option>
+                                                </optgroup>
+                                                <optgroup label="SKU:2093">
+                                                    <option value="2093-أخضر">2093-أخضر</option>
+                                                    <option value="2093-أزرق">2093-أزرق</option>
+                                                    <option value="2093-أزرق قاتم">2093-أزرق قاتم</option>
+                                                </optgroup>
+                                                <optgroup label="SKU:1301-Bluetooth">
+                                                    <option value="1301-Bluetooth-أخضر">1301-Bluetooth-أخضر</option>
+                                                    <option value="1301-Bluetooth-أسود">1301-Bluetooth-أسود</option>
+                                                </optgroup>
+                                                <optgroup label="SKU:1155">
+                                                    <option value="1155-أسود">1155-أسود</option>
+                                                    <option value="1155-أبيض">1155-أبيض</option>
+                                                </optgroup>
+                                                <optgroup label="SKU:1717">
+                                                    <option value="1717-أسود">1717-أسود</option>
+                                                </optgroup>
+                                                <optgroup label="SKU:1251">
+                                                    <option value="1251-أسود">1251-أسود</option>
+                                                </optgroup>
+                                                <optgroup label="SKU:1881">
+                                                    <option value="1881-أسود ذهبي">1881-أسود ذهبي</option>
+                                                    <option value="1881-أسود رمادي">1881-أسود رمادي</option>
+                                                </optgroup>
+                                                <optgroup label="SKU:1303-Bluetooth">
+                                                    <option value="1303-Bluetooth-أسود">1303-Bluetooth-أسود</option>
+                                                </optgroup>
+                                                <optgroup label="SKU:2080">
+                                                    <option value="2080-أحمر">2080-أحمر</option>
+                                                </optgroup>
+                                            </select></div>
+                                        <div class="col">
+                                            <div class="list-group-item"><input class="form-control form-control rounded-0 text-end" type="number" id="quantity" name="quantity" value="1"><input class="form-control d-none form-control form-control" type="text" name="unit_price" step="any" value="2500"><input class="form-control d-none form-control form-control" type="text" id="item_total" name="item_total" value="0"></div>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="row d-flex flex-row justify-content-center">
+                                        <div class="col d-flex d-lg-flex flex-column"><button class="btn btn-dark btn-send btn-js pt-2 btn-block" type="submit" value="ارسال الطلب" style="margin-bottom: 6px;">إرسال الطلب</button><button class="btn btn-dark disabled d-none disabled disabled btn-loading" disabled="">يتم إرسال الطلب...&nbsp;<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span></button></div>
+                                    </div>
+                                    <hr>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <hr class="divider">
+            <div class="container px-4 px-lg-5 mt-5" style="padding-top: 0px;">
+                <section class="py-5" style="margin-top: -96px;">
+                    <div class="row d-flex flex-column">
+                        <div class="col text-end">
+                            <h5 style="font-weight: bold;font-family: Cairo, sans-serif;"><strong><span style="color: rgba(33, 37, 41, 0.75);">- وصف المنتج :</span></strong></h5>
+                            <p class="lead text-body" style="font-family: Cairo, sans-serif;font-weight: bold;font-size: 14px;margin-top: 0px;margin-bottom: 0px;"><br>- الساعة ليست مجرد أداة بسيطة لقياس الوقت، فهي إكسسوار أزياء حقيقي ورمز للأناقة للجميع.&nbsp;<br><br>- مهما كان شكلها وأسلوبها، فإنها لا تتأثر بمرور الزمن تضفي لمسة جمالية على ملابسك اليومية.<br><br>- الوظائفة: ساعة رياضية مع ساعة توقيت مزدوجة ومنبه، إضاءة خلفية رقمية، ساعة رجالية.<br><br>- الساعة مقاومة للماء حتى عمق 50 متر - مناسبة للسباحة - مقاومة للماء مدى الحياة ولكنها غير مناسبة للغمر لفترة طويلة.&nbsp;<br><br>- الإضاءة الخلفية - القرص: 49 ملم - عرض رقمي على شاشة LED. تسمح لك الإضاءة الخلفية برؤية القرص بوضوح في الظلام.</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <hr>
+        </div>
+    </section>
+    <section class="bg-dark" style="font-family: Cairo, sans-serif;padding-top: 26px;margin-top: -26px;">
+        <div class="row d-flex flex-row justify-content-center align-items-center" style="height: 100.5px;margin-left: 0px;">
+            <div class="col-md-6 text-center text-cairo-p mb-5">
+                <div class="d-flex flex-row justify-content-center">
+                    <ul class="list-unstyled text-center list-inline ms-5">
+                        <li class="list-inline-item"><a href="https://www.facebook.com/profile.php?id=100086531486074" class="btn-floating btn-sm text-white" style="font-size:23px;" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                        <li class="list-inline-item"><a href="https://www.instagram.com/" class="btn-floating btn-sm text-white" style="font-size:23px;" target="_blank"><i class="fab fa-instagram" style="margin-right: 13px;"></i></a></li>
+                    </ul>
+                </div>
+                <p class="text-light"> مطور الموقع : Copyright ©2024 / <a href="#" style="text-decoration:none;"><strong class="text-primary">Techshopdz</strong></a></p>
+            </div>
+        </div>
+    </section><script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbw6pebcPsZ6B5QGS5BWN9ujC9SyNKJusohZR-53QP_nN6s-SFvuH4-CFY_ZzX05Hi0lAA/exec';
+        const orderform = document.forms['orderForm'];
+        const btnKirim = document.querySelector('.btn-js');
+        const btnLoading = document.querySelector('.btn-loading');
+        const myAlert = document.querySelector('.my-alert');
+      
+        orderform.addEventListener('submit', (e) => {
+          e.preventDefault();
+          // ketika tombol submit diklik
+          // tampilkan tombol loading, hilangkan tombol kirim
+          btnLoading.classList.toggle('d-none');
+          btnKirim.classList.toggle('d-none');
+          fetch(scriptURL, { method: 'POST', body: new FormData(orderform) })
+            .then((response) => {
+              // tampilkan tombol kirim, hilangkan tombol loading
+              btnLoading.classList.toggle('d-none');
+              btnKirim.classList.toggle('d-none');
+              // tampilkan alert
+              myAlert.classList.toggle('d-none');
+              // reset formnya
+              orderform.reset();
+              console.log('Success!', response);
+            })
+            .catch((error) => console.error('Error!', error.message));
+        });
+      </script><script>
+  
+        const form_telegram = document.querySelector("#orderForm");
+        
+        form_telegram.addEventListener("submit", (e) => {
+            e.preventDefault();
+        
+            var product = document.getElementById("product-name").value;
+            var name = document.getElementById("fullname").value;
+            var tel = document.getElementById("yourNumber").value;
+            var city_perc = document.getElementById("state").value;
+            var address = document.getElementById("city").value;
+            var quantity = document.getElementById("quantity").value;
+            var skucolor = document.getElementById("sku-color").value;
+            
+          
+            
+            var my_text = `طلب جديد  : %0A- <b>اسم وسعر المنتج: </b> <i>${product}</i> %0A - <b>الاسم: </b> <i>${name}</i> %0A - <b>الهاتف: </b> <i>${tel}</i> %0A - <b>الولاية/مكان التوصيل: </b> <i>${city_perc}</i> %0A  - <b>البلدية: </b> <i>${address}</i> %0A - <b>الكمية: </b> <i>${quantity}</i> %0A - <b>النوع واللون : </b> <i>${skucolor}</i> %0A - %0A`;
+            
+        
+            var token = "7137095427:AAFrGaWSw2B3RD_7Pr_lfDZfYl220oYZkJ8"
+            var chat_id = -1002066439392
+            var url = `https://api.telegram.org/bot${token}/sendMessage?chat_id=${chat_id}&text=${my_text}&parse_mode=html`
+        
+            let api = new XMLHttpRequest();
+            api.open("GET", url, true);
+            api.send();
+        
+            console.log("Message successfully sended!")
+        })
+        
+    </script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/custom-ordre.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
